@@ -23,6 +23,9 @@ public class commonMethods {
 
 	public commonMethods(WebDriver driver) {
 		this.driver = driver;
+		
+		
+		
 	}
 
 	public void MspLogin(Row r1) {
