@@ -47,7 +47,7 @@ public class SmartTrack_Test extends Constants {
 		kwm.CreateNewReq(r1);
 
 		Thread.sleep(5000);
-		reqPage.Supervalu(r0, r1);
+		reqPage.Supervalu(r1);
 
 	}
 }
