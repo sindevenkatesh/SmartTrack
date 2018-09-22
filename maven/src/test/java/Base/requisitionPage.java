@@ -18,23 +18,12 @@ public class requisitionPage {
 
 	// OutlineTab
 
-	public void Supervalu(Row r0, Row r1) {
+	public void Supervalu(Row r1) {
 		
 		KeyWords kw = PageFactory.initElements(driver, KeyWords.class);
-		Lables Lable = PageFactory.initElements(driver, Lables.class);
-
+		
 		// Cost Center *
-		if (kw.ID_Select_CostCenter_CostCenterId != null) {
-			
-			// Label Check
-			String UILable = Lable.CostCenter.getText();					
-			Log.info("Actual Lable is :" + UILable);
-			
-			String ExcelLable = r0.getCell(10).getStringCellValue();
-			Log.info("Expected Lable is :" +ExcelLable);
-										
-			assertEquals(UILable, ExcelLable);
-			
+		if (kw.ID_Select_CostCenter_CostCenterId != null) {			
 			// Operation
 			String CostCenterData = r1.getCell(10).getStringCellValue();
 			Select CostCenterDD = new Select(kw.ID_Select_CostCenter_CostCenterId);
