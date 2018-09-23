@@ -3,9 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="JavaExamples.FibonacciSeries"/>
       <class name="testsuite.SmartTrack_Test"/>
-      <class name="utility.TestReport_old"/>
+      <class name="testsuite.CreateCW_Test"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
