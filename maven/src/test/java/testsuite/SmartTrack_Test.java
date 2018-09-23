@@ -19,6 +19,7 @@ public class SmartTrack_Test extends Constants {
 	public static String ClientData = "ClientData";
 	public static String outputData = "Output";
 	
+	
 
 	@Test
 	public void SmartTrackLogin() throws IOException, InterruptedException {
@@ -34,8 +35,7 @@ public class SmartTrack_Test extends Constants {
 		commonMethods comMeth = PageFactory.initElements(driver, commonMethods.class);
 		KeyWordMethods kwm = PageFactory.initElements(driver, KeyWordMethods.class);
 		requisitionPage reqPage = PageFactory.initElements(driver, requisitionPage.class);
-
-		Row r0 = eo.getRowData(ExcelPath, ClientData, 0);
+		
 		Row r1 = eo.getRowData(ExcelPath, ClientData, 1);
 		comMeth.MspLogin(r1);
 
