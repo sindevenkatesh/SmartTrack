@@ -130,8 +130,8 @@ public class Constants {
 
 			System.setProperty("webdriver.chrome.driver", "/home/venkateshshinde/chromedriver");
 			// Handle https certifications
-			DesiredCapabilities cap = DesiredCapabilities.chrome();
-			cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+			//DesiredCapabilities cap = DesiredCapabilities.chrome();
+			//cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 			driver = new ChromeDriver();
 		}
 
