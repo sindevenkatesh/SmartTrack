@@ -1,7 +1,5 @@
 package Base;
 
-import static org.testng.Assert.assertEquals;
-
 import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.WebDriver;

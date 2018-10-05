@@ -10,9 +10,8 @@ import org.openqa.selenium.WebDriver;
 public class screenShot {
 
 	public void takeScreenShot(WebDriver driver, String path, String fileName) throws IOException {
-
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyf
+		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(srcFile, new File(path + fileName));
 
 	}
 }

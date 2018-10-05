@@ -1,6 +1,8 @@
 package JavaExamples;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 public class FibonacciSeries {
 	

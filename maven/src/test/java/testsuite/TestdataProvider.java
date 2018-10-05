@@ -1,5 +1,7 @@
 package testsuite;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -11,6 +13,7 @@ import org.testng.annotations.Test;
 import config.Constants;
 
 public class TestdataProvider extends Constants{
+
 
 	@Test(dataProvider = "sampTest")
 	public static void login(String loginName, String password) {		
@@ -32,8 +35,6 @@ public class TestdataProvider extends Constants{
 			for (int i = 1; i <= Rowcount; i++) {
 				for (int j = 0; j < COlumncount; j++) {
 					abc[i - 1][j] = st.getRow(i).getCell(j).getStringCellValue();					
-					//System.out.println("value is :"+value);
-					//abc[i-1][j]= value.toString();
 				}
 			}
 		} catch (Exception e) {
@@ -41,6 +42,7 @@ public class TestdataProvider extends Constants{
 		}
 		return abc;
 	}
+	@Test
 	@DataProvider(name = "sampTest", parallel = false)
 	public static Object[][] testParameterData() throws Exception {// Data provider annotation usage starts here
 		Object data[][] = XlReading();
