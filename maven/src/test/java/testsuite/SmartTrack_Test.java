@@ -15,9 +15,7 @@ public class SmartTrack_Test extends Constants {
 
 	static Logger Log = Logger.getLogger(SmartTrack_Test.class.getName());
 
-	public static String Main = "Main";
-	public static String ClientData = "ClientData";
-	public static String outputData = "Output";
+	
 	
 	
 
@@ -28,6 +26,9 @@ public class SmartTrack_Test extends Constants {
 
 		Row r = eo.getRowData(ExcelPath, Main, 1);
 
+		
+		eo.getRowData(ExcelPath, Main, 1);
+		
 		Log.info("Test");
 		startBrowser(r);
 		Thread.sleep(3000);
@@ -37,6 +38,7 @@ public class SmartTrack_Test extends Constants {
 		requisitionPage reqPage = PageFactory.initElements(driver, requisitionPage.class);
 		
 		Row r1 = eo.getRowData(ExcelPath, ClientData, 1);
+		
 		comMeth.MspLogin(r1);
 
 		Thread.sleep(5000);

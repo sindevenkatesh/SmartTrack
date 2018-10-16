@@ -23,23 +23,16 @@ public class commonMethods {
 
 	public commonMethods(WebDriver driver) {
 		this.driver = driver;
-		
-		
-		
+
 	}
 
 	public void MspLogin(Row r1) {
-		
-		
-		
-		driver.findElement(KeyWords.UserName).sendKeys(r1.getCell(3).getStringCellValue());
-		driver.findElement(KeyWords.Password).sendKeys(r1.getCell(4).getStringCellValue());
-		driver.findElement(KeyWords.LoginBtn).click();
-		
-		/*KeyWords kw = PageFactory.initElements(driver, KeyWords.class);
-	 	kw.UserName.sendKeys(r1.getCell(3).getStringCellValue());		
+
+		KeyWords kw = PageFactory.initElements(driver, KeyWords.class);
+
+		kw.UserName.sendKeys(r1.getCell(3).getStringCellValue());
 		kw.Password.sendKeys(r1.getCell(4).getStringCellValue());
-		kw.LoginBtn.click();*/
+		kw.LoginBtn.click();
 	}
 
 	public String ClientSelection(Row r) throws InterruptedException {
@@ -117,9 +110,6 @@ public class commonMethods {
 		return FN;
 	}
 
-	
-	
-	
 	public String phones(int i) {
 		String[] pho = { "", "9123434340", "9123434341", "9123434342", "9123434343", "9123434344", "9123434345",
 				"9123434346", "9123434347" };
